@@ -140,10 +140,3 @@ body {
 .footer i {
   color: rgba(255, 178, 178, 0.5);
 }
-
-/* Media Query Styles */
-@media (max-width: 480px) {
-  body {
-    margin: 15px;
-  }
-}
