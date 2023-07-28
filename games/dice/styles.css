@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #322653;
+  color: #ffd2d7;
+  text-align: center;
+  margin: 50px 0;
+}
+
+section {
+  margin: 0 15px;
+}
+
+/* HEADLINE */
+h1 {
+  font-size: 3rem;
+}
+
+/* PLAYERS */
+.players-wrapper {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.players-wrapper button {
+  background-color: rgba(255, 210, 215, 0.5);
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player {
+  margin-bottom: 25px;
+}
+
+.player * {
+  display: block;
+}
+
+input {
+  all: unset;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  width: 150px;
+}
+
+input::placeholder {
+  color: rgba(255, 210, 215, 0.5);
+}
+
+i {
+  height: 50px; /* Disable jumping after loading */
+  font-size: 50px;
+}
+
+.controlls {
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: #ffd2d7;
+  color: #322653;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* FOOTER */
+a {
+  all: unset;
+  font-size: 0.75rem;
+  color: rgba(255, 210, 215, 0.5);
+}
+
+/* MEDIUM SCREEN DESIGN */
+@media only screen and (min-width: 900px) {
+  section {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/* LARGE SCREEN DESIGN */
+@media only screen and (min-width: 1200px) {
+  body {
+    margin: 100px 0;
+  }
+
+  section {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .players-wrapper {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    gap: 50px;
+  }
+
+  .player {
+    margin-bottom: 50px;
+  }
+
+  input {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    width: inherit;
+  }
+
+  input:hover {
+    color: rgba(255, 210, 215, 0.8);
+  }
+
+  i {
+    height: 200px; /* Disable jumping after loading */
+    font-size: 200px;
+  }
+
+  .controlls {
+    margin-bottom: 200px;
+  }
+
+  button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 210, 215, 0.8);
+  }
+
+  button:active {
+    scale: 0.95;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: rgba(255, 210, 215, 0.8);
+  }
+}
+
+/* JS ENABLED STYLE */
+.hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
