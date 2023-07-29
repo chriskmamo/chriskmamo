@@ -89,3 +89,22 @@ function removePlayer() {
 trigger.addEventListener("click", rollDice);
 remove.addEventListener("click", removePlayer);
 add.addEventListener("click", addPlayer);
+document.addEventListener("keydown", function (e) {
+  if (e.target === document.body) {
+    switch (e.key) {
+      case " ":
+      case "Spacebar":
+        e.preventDefault();
+        rollDice();
+        break;
+      case "+":
+        e.preventDefault();
+        addPlayer();
+        break;
+      case "-":
+        e.preventDefault();
+        removePlayer();
+        break;
+    }
+  }
+});
