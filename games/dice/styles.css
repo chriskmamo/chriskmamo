@@ -61,8 +61,8 @@ input::placeholder {
 }
 
 i {
-  height: 50px; /* Disable jumping after loading */
-  font-size: 50px;
+  height: 100px; /* Disable jumping after loading */
+  font-size: 100px;
 }
 
 .controlls {
@@ -95,6 +95,11 @@ a {
 
   h1 {
     font-size: 5rem;
+  }
+
+  i {
+    height: 150px; /* Disable jumping after loading */
+    font-size: 150px;
   }
 }
 

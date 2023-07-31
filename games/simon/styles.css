@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", monospace;
+}
+
+body {
+  background-color: #e9d8a6;
+  color: #090c02;
+  text-align: center;
+  margin: 50px 0;
+}
+
+section {
+  margin: 0 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADLINE */
+h1 {
+  font-size: 3rem;
+}
+
+/* BOTTONS */
+.game {
+  display: grid;
+  grid-template: 150px 150px / 150px 150px;
+  gap: 30px;
+  margin: 75px 0;
+}
+
+.game > button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: #090c02 solid 10px;
+}
+
+.game > button:nth-child(1) {
+  background-color: green;
+}
+
+.game > button:nth-child(2) {
+  background-color: red;
+}
+
+.game > button:nth-child(3) {
+  background-color: yellow;
+}
+
+.game > button:nth-child(4) {
+  background-color: blue;
+}
+
+.game > button:hover {
+  cursor: pointer;
+}
+
+.game > button:nth-child(1):hover {
+  background-color: rgba(0, 128, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.game > button:nth-child(2):hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.game > button:nth-child(3):hover {
+  background-color: rgba(255, 255, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.game > button:nth-child(4):hover {
+  background-color: rgba(0, 0, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.game > button:active {
+  transform: scale(0.95);
+}
+
+.new-game {
+  background-color: #090c02;
+  padding: 15px 25px;
+  border-radius: 7px;
+  border: none;
+  color: #e9d8a6;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.new-game:hover {
+  background-color: rgba(9, 12, 2, 0.8);
+}
+
+.new-game:active {
+  transform: scale(0.95);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+}
+
+a {
+  all: unset;
+  font-size: 0.75rem;
+  color: rgba(9, 12, 2, 0.5);
+}
+
+/* MEDIUM SCREEN DESIGN */
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 100px 0;
+  }
+
+  section {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/* LARGE SCREEN DESIGN */
+@media only screen and (min-width: 1200px) {
+  body {
+    margin: 150px 0;
+  }
+
+  section {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .game {
+    grid-template: 200px 200px / 200px 200px;
+    gap: 50px;
+    margin: 100px 0;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: rgba(9, 12, 2, 0.8);
+  }
+}
+
+/* JS ENABLED STYLE */
+.highlight {
+  transform: scale(1.1);
+}
