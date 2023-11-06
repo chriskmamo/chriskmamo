@@ -126,7 +126,8 @@ body {
 
 /* Certificate Styles */
 .certificate {
-  max-width: 100%;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 /* Footer Styles */
