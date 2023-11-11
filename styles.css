@@ -9,6 +9,14 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: black;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 /* Background Image Styles */
 .background-image {
   position: fixed;
@@ -143,6 +151,6 @@ body {
   padding: 20px 0;
 }
 
-.footer i {
-  color: rgba(255, 178, 178, 0.5);
+.footer svg {
+  fill: rgba(255, 178, 178, 0.5);
 }

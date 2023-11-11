@@ -80,7 +80,7 @@ button {
 }
 
 /* FOOTER */
-a {
+p {
   all: unset;
   font-size: 0.75rem;
   color: rgba(255, 210, 215, 0.5);
@@ -161,14 +161,14 @@ a {
     scale: 0.95;
   }
 
-  a {
+  p {
     font-size: 1rem;
   }
 
-  a:hover {
+  /* a:hover {
     cursor: pointer;
     color: rgba(255, 210, 215, 0.8);
-  }
+  } */
 }
 
 /* JS ENABLED STYLE */

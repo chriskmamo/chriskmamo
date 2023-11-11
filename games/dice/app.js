@@ -86,6 +86,12 @@ function removePlayer() {
 }
 
 // Event Listeners
+const eventTriggerIds = ["remove", "add", "play"];
+window.addEventListener("touchstart", (e) => {
+  if (!eventTriggerIds.includes(e.target.id) && e.target.tagName !== "INPUT") {
+    rollDice();
+  }
+});
 trigger.addEventListener("click", rollDice);
 remove.addEventListener("click", removePlayer);
 add.addEventListener("click", addPlayer);
